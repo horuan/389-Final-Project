@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../css/rk/landing.css" />
+    <link rel="stylesheet" href="../css/rk/me.css" />
+    <link rel="stylesheet" href="../css/rk/idea.css" />
+    <link rel="stylesheet" href="../css/rk/contact.css" />
+    <link rel="stylesheet" href="../css/rk/work.css" />
+    <title>Portfolio Website</title>
+  </head>
+  <body>
+    <div id="root">
+      <nav id="left-nav">
+        <a id="about-btn" class="nav-link" href="#about">About</a>
+        <a id="work-btn" class="nav-link" href="#work">Work</a>
+        <a id="contact-btn" class="nav-link" href="#contact">Contact</a>
+      </nav>
+      <a id="home-upper" href="../index.html">
+        <h3 id="name-upper">Home</h3>
+      </a>
+      <aside id="social-links">
+        <a href="https://github.com/rakane" target="_blank">
+          <img class="social-icon" src="../assets/github.png" alt="instagram">
+        </a>
+        <a href="https://www.linkedin.com/in/ryanakane/" target="_blank">
+          <img class="social-icon" src="../assets/linkedin.png" alt="instagram">
+        </a>
+      </aside>
+      <a id="back-to-top-link" href="#root">
+          <aside id="back-to-top">
+              <img id="back-arrow" src="../assets/down-arrow.png" alt="down arrow" />
+              <p>Top</p>
+          </aside>
+      </a>
+      <div id="corner-ribbon"></div>
+      </div>
+      
+      <main id="main">
+        <div id="landing">
+            <div id="landing-background" />
+          <div id="landing-content">
+              <h2 id="landing-secondary">Computer Engineering student at Syracuse University<br/><span style="color: white;">Interested in software engineering, especially embedded systems</span></h2>
+              <h1 id="landing-main">Ryan <br />Kane<span id="landing-period">.</span></h1>
+              <div id="continue">
+              <h3>Continue</h3>
+              <img src="../assets/down-arrow.png" alt="down arrow" />
+            </div>
+          </div>
+        </div>
+
+        <div id="about">
+          <div id="about-left">
+            <div id="about-left-container">
+                <h4 id="about-title">Me<span id="about-period">.</span></h4>
+                <p class="about-text">I am a junior at Syracuse University, outside of the classroom I like to spend my time creating new software projects. I have been using Object Oriented programming in Java for over 4 years, and have now developed an interest in embedded software development in C, as well as FPGA and microcontroller design.</p>    
+            </div>
+          </div>
+          <div id="about-right">
+            <div id="about-right-container">
+              <img id="me-img" src="../assets/headshot.jpg" alt="Photo of me" />
+              <div class="row">
+                <img class="about-icon" src="../assets/projects.png" alt="person art" />
+                <p id="num-projects">15+ Projects</p>
+              </div>
+              <div class="row">
+                <img class="about-icon" src="../assets/clock.png" alt="person art" />
+                <p>2000+ Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="work">
+          <div id="work-left">
+            <div id="work-left-container">
+              <h4 id="work-title">Work<span id="work-period">.</span></h4>
+              <p id="work-text">In the past few years, I have developed many software and hardware projects. Here are some of my favorites! </p>
+            </div>
+          </div>
+          <div id="work-right">
+            <div id="work-right-container">
+              <img id="work-img" src="../assets/LEDS.png" alt="Ireland page" />
+            </div>
+          </div>
+        </div>
+        <div id="more-work">
+          <div id="search-bar">
+            <input
+              name="search"
+              id="search"
+              placeholder="Search Github Repos"
+              value=""
+              onchange="searchRepos(this.value)"
+            />
+            <select
+              id="language-select"
+              name="language"
+              onchange="languageFilter(this.value)"
+            >
+              <option value="">Filter Language</option>
+              <option value="Java">Java</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="HTML">HTML</option>
+            </select>
+          </div>
+          <div id="repos">
+            <!---Dynamically populated by JavaScript-->
+          </div>
+        </div>
+        <footer>
+          <div id="contact">
+            <h4>Contact.</h4>
+            <h6>Email: ryanakane1@gmail.com</h6>
+            <h6>Github: rakane</h6>
+            <h6>Linkedin: ryanakane</h6>
+          </div>
+          <div class="credit-link">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </footer>  
+      </main>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="../js/ryan_load_repos.js"></script>
+    <script src="../js/scroll.js"></script>
+  </body>
+</html>

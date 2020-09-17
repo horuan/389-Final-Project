@@ -1,0 +1,59 @@
+body {
+  background-image: url("https://static.tumblr.com/s2ymoja/U0nm9838s/500302.png");
+}
+#bloc {
+position:fixed;
+top:60px;
+left:60px;
+}
+
+.transition {
+  -webkit-transition: opacity 0.7s linear;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+}
+
+#picture {
+  width:250px;
+}
+
+#picture:hover {
+  width:340px;
+}
+
+#left {
+  float:left;
+  overflow:hidden;
+  width:125px;
+}
+
+#right {
+  overflow:hidden;
+ width:125px;
+}
+
+#about {
+  float:left;
+  width:0px;
+  height:0px;
+  opacity:0;
+}
+
+#picture:hover #about {
+  width:125px;
+  padding:20px 10px 20px 10px;
+  opacity:1;
+}
+
+#picture:hover #left {
+  margin-left:-65px;
+}
+
+function showDate() {
+  var d = new Date();
+  var curr_date = d.getDate();
+  var curr_month = d.getMonth() + 1; //months are zero based
+  var curr_year = d.getFullYear();
+  document.write(curr_date + "-" + curr_month + "-" + curr_year);
+}

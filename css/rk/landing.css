@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 510vh;
+}
+main {
+  margin: 4vh 5vw;
+  height: 500vh;
+}
+#name-upper {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: black;
+}
+#left-nav {
+  z-index: 1000;
+  position: fixed;
+  left: 0vw;
+  width: 5vw;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  color: black;
+  transform: rotate(-90deg);
+  font-size: 18px;
+  font-weight: 400;
+  margin: 48px 32px;
+  padding: 0 72px;
+  font-family: "Roboto Mono", monospace;
+}
+#back-to-top-link {
+  position: fixed;
+  height: 3vh;
+  bottom: 8px;
+  right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 2vw;
+  z-index: 1000;
+}
+#back-to-top {
+  z-index: 1000;
+  position: fixed;
+  bottom: 8px;
+  right: 0vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 3vw;
+}
+#back-to-top p {
+  color: black;
+  transform: rotate(-90deg);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+}
+#back-arrow {
+  transform: rotate(180deg);
+  width: 16px;
+  height: 16px;
+}
+#landing {
+  height: 90vh;
+  width: 90vw;
+  /*background: linear-gradient(90deg, #faa788 50%, white 50%);*/
+}
+#landing-content {
+  overflow: hidden;
+  width: 90vw;
+  height: 90vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#landing-main {
+  transition: transform 1s cubic-bezier(0.55, 0.03, 0.46, 0.97);
+  font-family: "Roboto Mono", monospace;
+  line-height: 180px;
+}
+#landing-secondary {
+  position: absolute;
+  opacity: 0;
+  left: 5vw;
+  transition: opacity 1s ease-in;
+  font-family: "Roboto Mono", monospace;
+  font-size: 28px;
+  text-align: left;
+}
+#landing-background {
+  z-index: 1;
+  height: 90vh;
+  background: #faa788;
+  left: 5vw;
+  top: 4vh;
+  width: 45vw;
+  z-index: 1000;
+  transition: width 1s cubic-bezier(0.55, 0.03, 0.46, 0.97);
+}
+
+h1 {
+  text-align: left;
+  font-size: 200px;
+  margin: 0;
+}
+#landing-period {
+  color: #faa788;
+}
+#corner-ribbon {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0.5vw;
+  width: 20px;
+  height: 2vh;
+  background: #3f4a4d;
+}
+#social-links {
+  z-index: 1000;
+  position: fixed;
+  right: 0vw;
+  width: 3vw;
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 16px 0;
+}
+#continue {
+  position: absolute;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+#continue h3 {
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 32px;
+}
+#continue img {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-top: 8px;
+}
+#continue h3 {
+  transform: rotate(90deg);
+  font-family: "Roboto Mono", monospace;
+}
+
+@media (max-width: 1200px) {
+  #landing-secondary {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #landing-secondary {
+    font-size: 18px;
+  }
+  #landing-main {
+    font-size: 150px;
+    line-height: 140px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 650px) {
+  #landing-main {
+    font-size: 100px;
+    line-height: 100px;
+  }
+  #social-links {
+    right: 0.5vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #landing-secondary {
+    width: 70vw;
+  }
+  #social-links {
+    right: 1vw;
+    width: 1.5vw;
+  }
+  .social-icon {
+    width: 18px;
+    height: 18px;
+  }
+  #corner-div {
+    width: 18px;
+  }
+}
+
+@media (max-width: 400px) {
+  #landing-background {
+    width: 89vw;
+  }
+  #landing-content {
+    width: 89vw;
+  }
+  #landing-main {
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .social-icon {
+    width: 14px;
+    height: 14px;
+    margin: 16px 0;
+  }
+  #corner-div {
+    width: 14px;
+  }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700");
+
+#navbar {
+  /* height: 10vh; */
+  /* width: 100vw; */
+  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 15px;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+#navbar-list {
+  display: block;
+  list-style-type: none;
+  width: 100%;
+}
+
+.navbar-item {
+  display: block;
+  float: left;
+  margin: 0 16px;
+}
+
+.navbar-item a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+}
+
+.navbar-item a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.navbar-item a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+@media (max-width: 1100px) {
+  .navbar-item {
+    margin: 0;
+  }
+  .navbar-item a {
+    font-size: 14px;
+  }
+}

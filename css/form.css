@@ -1,0 +1,60 @@
+/* Below line is write to use Google font online */
+@import "http://fonts.googleapis.com/css?family=Ubuntu";
+
+/* borrowed code sample but made modifications to fit aesthetics of website and size limitations*/
+/* this formats the outer form layout*/
+div#form_sample {
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 400px;
+  height: 660px;
+  padding: 4px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 20px;
+  box-shadow: 0 0 15px;
+  border-radius: 6px;
+  float: left
+}
+
+/* this formats the labels*/
+label {
+  float: center;
+  font-size: 16px
+}
+
+/* formats first two text boxes*/
+input[type="text"] {
+  width: 85%;
+  margin-top: 0px;
+  height: 10px;
+  margin-bottom: 25px;
+  padding: 10px;
+  line-height: 25px;
+  border: 3px solid #2BC1F2
+}
+
+/* formats the final message text box*/
+textarea {
+  width: 85%;
+  border: 3px solid #2BC1F2;
+  padding: 10px;
+  margin-bottom: 25px;
+  margin-top: 10px;
+  height: 260px;
+  resize: none
+}
+
+/* formats the submit button*/
+input[type="submit"] {
+  width: 85%;
+  padding: 10px 45px;
+  background-color: #2BC1F2;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif
+}

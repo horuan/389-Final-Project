@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<!--  	For the accordion ("My Programming Skills") section	 -->
+	<style>
+		.accordion {
+			background-color: #eee;
+			color: #444;
+			cursor: pointer;
+			padding: 18px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 15px;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: #ccc;
+		}
+
+		.panel {
+			padding: 0 18px;
+			background-color: white;
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.2s ease-out;
+		}
+	</style>
+	<link rel="stylesheet" href="../css/ritwiktakkar.css" />
+	<link rel="stylesheet" href="../css/navbar.css" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+	<link rel="stylesheet" href="../css/form.css">\
+	<title>Portfolio Website: Ritwik Takkar</title>
+</head>
+
+
+<body>
+
+	<!--  Setting anchor at top of bage for button at the end of the page to return to here -->
+	<a name="top"></a>
+
+	<!--  Setting up navbar to see other people's pages at top of page -->
+	<nav id="navbar">
+		<ul id="navbar-list">
+			<li class="navbar-item">
+				<a href="../index.html">Home</a>
+			</li>
+			<li class="navbar-item">
+				<a href="ryankane.html">Ryan Kane</a>
+			</li>
+			<li class="navbar-item">
+				<a href="danachea.html">Dana Chea</a>
+			</li>
+			<li class="navbar-item">
+				<a href="ritwiktakkar.html">Ritwik Takkar</a>
+			</li>
+			<li class="navbar-item">
+				<a href="Hongyi.html">Hongyi Ruan</a>
+			</li>
+			<li class="navbar-item">
+				<a href="mergim.html">Mergim Azemi</a>
+			</li>
+			<li class="navbar-item">
+				<a href="../bcfiles/bchan.html">Brian Chan</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!--  Inserting line break to create distance between my page design and the navbar -->
+	</br></br>
+
+	<!--  divided each section by divs since I have a parallax effect page -->
+	<div class="introduction">
+		<img id="ritwik-headshot" src="../rt-images/ritwik-headshot.jpg" alt="profile-picture" />
+		<img id="scroll-down" src="../rt-images/scroll-down.gif" alt="scroll down" />
+		<div class="ptext-intro">
+			<span class="border trans">
+				<h2>Welcome to </br> Ritwik Takkar's </br> portfolio!</h2>
+			</span>
+		</div>
+		<!--  social media and mail links with button and animations -->
+		<div class="socialmedia">
+			<a class="btn" href="https://github.com/rtakk" target="_blank">
+				<i class="fab fa-github"></i>
+			</a>
+			<a class="btn" href="https://www.linkedin.com/in/rtakkar/" target="_blank">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<p>
+				<a href="mailto:rtakkar@syr.edu?
+				subject=We%20are%20offering%20you%20$1%20million...%20Totally%20not%20a%20scam!&
+				body=HAHA!%20You%20just%20got%20hacked! (ignore the signature below, it's my own machine after all)" target="_top">
+					<h4>Click to send an email using </br> your default mail client</h4>
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<!--  My programming skills in accordion (pull-down menu) style -->
+	<button class="accordion">My Programming Background</button>
+	<div class="panel">
+		<a name="endofpanel"></a>
+		<section class="section section-light">
+			<p id="about-me">
+				Hello world! My name is Ritwik and I'm a junior majoring in computer engineering at Syracuse University. </br>
+				Scroll down to see more about my projects.
+				Here are some facts about my coding experience:
+				<ul id="about-me-list">
+					<li>Years of experience: 1.0</li>
+					<li>Languages (in order of proficiency): Python, C++, Java, C, HTML, CSS</li>
+					<li>Number of projects: 3</li>
+				</ul>
+			</p>
+		</section>
+	</div>
+
+	<!--  Next div of parallax: most recent project -->
+	<div class="project1-rbot">
+		<div class="ptext">
+			<span class="border trans">
+				<h2>Reddit Bot</h2>
+			</span>
+		</div>
+	</div>
+	<!--  written section differs from the background image above;background image stays constant to maintain effect  -->
+	<section class="section section-dark">
+		<p>
+			<!--  Horizontol unordered list for each section listing languages used, completion date and GitHub link for project -->
+			<ul id="project-header">
+				<li>Languages/modules used: Python, PRAW</li>
+				<li>Click <a href="https://github.com/rtakk/myRedditBots" target="_blank">here</a> to see this project.</li>
+				<li>Completed in: November 2019</li>
+			</ul>
+			<ul id="project-description">
+				<li>Programmed a Reddit bot in Python, by implementing the Python Reddit API Wrapper, PRAW, to reply to comments containing a keyword with a censored version of the parent comment</li>
+			</ul>
+		</p>
+	</section>
+
+	<div class="school-project">
+		<div class="ptext">
+			<span class="border trans">
+				<h2>FPGA & Microcontroller Design Lab</h2>
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<p>
+			<!--  Horizontol unordered list for each section listing languages used, completion date and GitHub link for project -->
+			<ul id="project-header">
+				<li>Languages/modules used: VHDL</li>
+				<li>Click <a href="https://bit.ly/2WdoecP" target="_blank">here</a> to see sample lab reports.</li>
+				<li>Spring & Fall 2019</li>
+			</ul>
+			<ul id="project-description">
+				<li>Built structural and RTL description of digital systems such as CPU and microcontroller using VHDL</li>
+				<li>Programmed embedded systems such as Arduino, NIOS, and Altera Max 10 FPGAs to perform functions of
+					shift registers, binary counters, etc...</li>
+				<li>Utilized electrical tools such as oscilloscope, multimeter and function generator</li>
+			</ul>
+		</p>
+	</section>
+
+	<div class="project2-inventory">
+		<div class="ptext">
+			<span class="border trans">
+				<h2>Inventory Management System</h2>
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<p>
+			<!--  Horizontol unordered list for each section listing languages used, completion date and GitHub link for project -->
+			<ul id="project-header">
+				<li>Languages/modules used: C++</li>
+				<li>Click <a href="https://github.com/rtakk/inventory-manager" target="_blank">here</a> to see this project.</li>
+				<li>Completed in: April 2019</li>
+			</ul>
+			<ul id="project-description">
+				<li>Designed an object-oriented program implementing functional decomposition supplemented by using vectors in C++ to create an interactive, offline inventory management system</li>
+			</ul>
+		</p>
+	</section>
+
+	<div class="project3-workout">
+		<div class="ptext">
+			<span class="border trans">
+				<h2>Workout Routine Generator</h2>
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<p>
+			<!--  Horizontol unordered list for each section listing languages used, completion date and GitHub link for project -->
+			<ul id="project-header">
+				<li>Languages/modules used: Python</li>
+				<li>Click <a href="https://github.com/rtakk/workout-routine" target="_blank">here</a> to see this project.</li>
+				<li>Completed in: December 2018</li>
+			</ul>
+			<ul id="project-description">
+				<li>Designed an object-oriented program with Python to generate a user-specified workout routine and display it on a GUI as well as store it inside a .txt file</li>
+			</ul>
+		</p>
+	</section>
+
+	<div class="future-project">
+		<div class="ptext">
+			<span class="border trans">
+				<h2>Future Project</h2>
+			</span>
+		</div>
+	</div>
+
+	<section class="section section-dark">
+		<p>
+			<!--  Horizontol unordered list for each section listing languages used, completion date and GitHub link for project -->
+			<ul id="project-header">
+				<li>Languages/modules used: Swift</li>
+				<li>Yet to begin</li>
+				<li>Estimated Completion: February 2020</li>
+			</ul>
+			<ul id="project-description">
+				<li>Build a simple iOS app to provide an enhanced view of the photo library</li>
+			</ul>
+		</p>
+	</section>
+
+	<!--  Last parallax section: contains button to go back to top using anchor at top of body source code and contact form -->
+	<div class="thanks">
+		<img id="scroll-up" src="../rt-images/scroll-down.gif" alt="scroll up" />
+		<div class="ptext">
+			<span class="border trans">
+			</span>
+			<div id="form_sample"></div> <!-- JS script contained in location specified below -->
+			<script src="../rt-js/form.js"></script>
+		</div>
+		<section class="backtotop">
+			<a href="#top">
+				<h5>Back to top<h5>
+			</a>
+		</section>
+	</div>
+
+</body>
+
+</html>
+
+<!--  Accordion JS script -->
+<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight) {
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
+</script>
